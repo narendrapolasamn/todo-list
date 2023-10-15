@@ -1,0 +1,12 @@
+<div class="modal-container">
+    <button mat-icon-button class="close-button" [mat-dialog-close]="false">
+        <mat-icon class="close-icon">X</mat-icon>
+    </button>
+    <div mat-dialog-content>
+        <p> Are you sure want to delete the {{data.title}}</p>
+    </div>
+    <div mat-dialog-actions class="actions">
+        <button class="submitBtn cancel"  [mat-dialog-close]="false">close</button>
+        <button class="submitBtn" (click)="delete()">Ok</button>
+    </div>
+</div>

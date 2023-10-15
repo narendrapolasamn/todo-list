@@ -1,0 +1,15 @@
+<div class="component-wrapper">
+    <h3>Add Todo Item</h3>
+    <form *ngIf="addTodoForm" [formGroup]="addTodoForm">
+        <label>Title</label>
+        <input formControlName="userName" type="text" placeholder="UserName"/>
+    
+        <label>Description</label>
+        <input formControlName="todoText" type="text" placeholder="Description"/>
+        <div class="actions">
+            <button (click)="addTodo()" class="submit-btn cancel">Cancel</button>
+            <button (click)="addTodo()" class="submit-btn" [disabled]="addTodoForm.invalid">Save</button>
+        </div>
+    
+    </form>
+</div> 

@@ -1,0 +1,67 @@
+.component-wrapper {
+    margin-top: 16px;
+}
+
+form {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #D1D5DB;
+    padding-right: 0px;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    &:focus {
+      outline: none;
+      border: 2px solid #1976d2;
+    }
+  }
+  .actions{
+    display: flex;
+    justify-content: flex-end;
+      .submit-btn {
+        background-color: #1976d2;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+
+        &:hover{
+          background-color: white;
+          color: black;
+          border: 0.1rem solid #1976d2;
+        }
+      }
+      button[disabled]{
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+        pointer-events: none;
+        &:hover{
+          border: 1px solid #999999;
+          background-color: #cccccc;
+          color: #666666;
+        }
+      }
+      .cancel{
+        margin-right: 1rem;
+      }
+
+    }
+    
+}
+  
+  

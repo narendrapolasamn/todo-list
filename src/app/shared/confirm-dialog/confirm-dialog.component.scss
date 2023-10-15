@@ -1,0 +1,43 @@
+
+.modal-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+}
+
+.close-icon {
+  transition: 1s ease-in-out;
+  margin-top: 0.5rem;
+  color: #1b1717c4;
+}
+ .actions{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+.submitBtn {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover{
+    background-color: white;
+    color: black;
+    border: 0.1rem solid #1976d2;
+  }
+}
+.cancel{
+  margin: 1rem;
+}
+}
